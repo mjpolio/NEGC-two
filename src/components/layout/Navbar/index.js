@@ -19,54 +19,61 @@ const Navbar = () => {
 				</Link>
 			</li>
 			<li className='navbar-item'>
-				<Link onClick={closeMobileMenu} to='/about' className='navbar-links'>
-					About Us
-					<i class="fas fa-chevron-right navbar-icon"></i>
-				</Link>
-					<div className="navbar-submenu">
-						<li className='navbar-item'>
-							<Link onClick={closeMobileMenu} to='/news' className='navbar-links'>
-								News
-							</Link>
-						</li>
-						<li className='navbar-item'>
-							<Link onClick={closeMobileMenu} to='/membership' className='navbar-links'>
-								Membership
-							</Link>
-						</li>
-						<li className='navbar-item'>
-							<Link onClick={closeMobileMenu} to='/executives' className='navbar-links'>
-								Board of Directors
-							</Link>
-						</li>
-						<li className='navbar-item'>
-							<Link onClick={closeMobileMenu} to='/committees' className='navbar-links'>
-								Committees
-							</Link>
-						</li>
-						<li className='navbar-item'>
-							<Link onClick={closeMobileMenu} to='/awards' className='navbar-links'>
-								Awards
-							</Link>
-						</li>
-						<li className='navbar-item'>
-							<Link onClick={closeMobileMenu} to='/photos' className='navbar-links'>
-								Photo Gallery
-							</Link>
-						</li>
-					</div>
+				About
+				<i class="fas fa-chevron-right navbar-icon"></i>
+				<div className="navbar-submenu">
+					<li className='navbar-item'>
+						<Link onClick={closeMobileMenu} to='/about' className='navbar-links'>
+							About Us
+						</Link>
+					</li>
+					<li className='navbar-item'>
+						<Link onClick={closeMobileMenu} to='/news' className='navbar-links'>
+							News
+						</Link>
+					</li>
+					<li className='navbar-item'>
+						<Link onClick={closeMobileMenu} to='/membership' className='navbar-links'>
+							Membership
+						</Link>
+					</li>
+					<li className='navbar-item'>
+						<Link onClick={closeMobileMenu} to='/executives' className='navbar-links'>
+							Board of Directors
+						</Link>
+					</li>
+					<li className='navbar-item'>
+						<Link onClick={closeMobileMenu} to='/committees' className='navbar-links'>
+							Committees
+						</Link>
+					</li>
+					<li className='navbar-item'>
+						<Link onClick={closeMobileMenu} to='/awards' className='navbar-links'>
+							Awards
+						</Link>
+					</li>
+					<li className='navbar-item'>
+						<Link onClick={closeMobileMenu} to='/photos' className='navbar-links'>
+							Photo Gallery
+						</Link>
+					</li>
+				</div>
 			</li>
+			
 			<li className='navbar-item'>
 				<Link onClick={closeMobileMenu} to='/calendar' className='navbar-links'>
 					Upcoming Events
 				</Link>
 			</li>
 			<li className='navbar-item'>
-				<Link onClick={closeMobileMenu} to='/resources' className='navbar-links'>
 					Resources
 					<i class="fas fa-chevron-right navbar-icon"></i>
-				</Link>
 					<div className="navbar-submenu">
+						<li className='navbar-item'>
+							<Link onClick={closeMobileMenu} to='/resources' className='navbar-links'>
+								Horticulture Resources
+							</Link>
+						</li>
 						<li className='navbar-item'>
 							<Link onClick={closeMobileMenu} to='/newsletters' className='navbar-links'>
 								Newsletters

@@ -19,7 +19,7 @@ const Home = () => {
 				<div className='underline'></div>
 			</h2>
 			<div>
-				<p>
+				<p className="home-bodytext">
 					The Norwood Evening Garden Club brings together enthusiastic gardeners
 					from Norwood, Walpole, Westwood and surrounding towns for the goals
 					of:
@@ -41,7 +41,7 @@ const Home = () => {
 					</ul>
 				</div>
 			</div>
-			<p>
+			<p className="home-bodytext">
 				The public is cordially invited to attend any of our meetings held at
 				the Carriage House at the First Baptist Church, 71 Bond Street in
 				Norwood (unless noted as members-only) featuring an outstanding array of
@@ -49,10 +49,10 @@ const Home = () => {
 				environmental issues. Our meetings are generally held on the last
 				Tuesday of the month from September through May.
 			</p>
-			<p>
+			<p className="home-bodytext">
 				For further information, contact{' '}
 				<a
-					className='link'
+					className='link home-bodytext'
 					href='mailto:membership@norwoodeveninggardenclub.com?subject=Gardening Club'
 				>
 					membership@norwoodeveninggardenclub.com

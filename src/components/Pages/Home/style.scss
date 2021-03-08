@@ -12,12 +12,25 @@
 		padding: 1rem 2rem;
 	}
 
-	&-list {
+	&-bodytext {
 		@include respond(phone) { //width < 1200px?
-			padding: 0 6rem;
+			font-size: 2.3rem;
 		}
 	}
+	&-list-container {
+		width: 100%;
+		display: flex;
+	}
 
+	&-list {
+		text-align: left;
+		margin: 8px auto 20px;
+
+		@include respond(phone) { //width < 1200px?
+			padding: 0 6rem;
+			font-size: 2.3rem;
+		}
+	}
 	&-moreinfo {
 		margin-top: 8rem;
 		// background-color: lightblue;
@@ -42,6 +55,11 @@
 			margin-bottom: 2rem;
 			font-size: 2rem;
 			font-weight: 500;
+
+			@include respond(phone) { //width < 1200px?
+				padding: 0 6rem;
+				font-size: 3rem;
+			}
 		}
 
 		
@@ -87,7 +105,7 @@
 			color: $primary-color;
 
 			@include respond(phone) { //width < 1200px?
-				font-size: 2rem;
+				font-size: 3.6rem;
 
 			}
 		}
@@ -107,7 +125,7 @@
 
 			@include respond(phone) { //width < 1200px?
 				height: calc(18rem);
-				width: calc(32rem);
+				width: calc(36rem);
 			}
 		}
 
@@ -119,7 +137,7 @@
 
 			@include respond(phone) { //width < 1200px?
 				height: calc(16rem);
-				width: calc(28rem);
+				width: calc(34rem);
 			}
 		}
 
@@ -161,41 +179,44 @@
 		}
 	}
 	
-	&-list-container {
-		width: 100%;
-		display: flex;
-	}
 
-	&-list {
-		text-align: left;
-		margin: 8px auto 20px;
-	}
 
-	.link:hover {
+	.link {
+		@include respond(phone) { //width < 1200px?
+			font-size: 2.3rem;
+		}
+
+		&:hover {
 		transform: translate(1rem) scale(1.05);
+		}
 	}
-}
 
-.green-bg {
-	background-color: $secondary-color;
-}
-
-.events-button {
-	margin-top: 2rem;
-	padding: 1.5rem 4rem;
-	background-color: $secondary-color;
-	border: none;
-	outline: none;
-	font-size: 1.8rem;
-	text-transform: uppercase;
-	transition: all .2s ease-in-out;
-	border-radius: .5rem;
-
-	&:hover {
-		background-color: lighten($dark-green-text, 15%);
+	.green-bg {
+		background-color: $secondary-color;
 	}
-	& a {
-		text-decoration: none;
-		color: #000;
+
+	.events-button {
+		margin-top: 2rem;
+		padding: 1.5rem 4rem;
+		background-color: $secondary-color;
+		border: none;
+		outline: none;
+		font-size: 1.8rem;
+		text-transform: uppercase;
+		transition: all .2s ease-in-out;
+		border-radius: .5rem;
+
+		&:hover {
+			background-color: lighten($dark-green-text, 15%);
+		}
+		& a {
+			text-decoration: none;
+			color: #000;
+		}
+
+		@include respond(phone) { //width < 1200px?
+			font-size: 2.3rem;
+		}
 	}
+
 }

@@ -3,16 +3,18 @@
 
 .navbar {
 	background-color: #fff;
-	text-align: center;
+	padding: 0 1rem;
 	max-width: 100%;
 	margin: 0 auto;
 
+
 	& ul {
-		display: inline-flex;
+		display: flex;
 		list-style: none;
 		color: #fff;
 		width: 75%;
-
+		align-items: center;
+	
 		@include respond(tab-land) { //width < 1200px?
 			display: none;
 		}	
@@ -34,16 +36,21 @@
 		z-index: 99;
 		cursor: pointer;
 		
-		// & .navbar-item {
-		// 	display: flex;
-		// 	flex-direction: column;
-		// }
-		// & .navbar-submenu {
-		// 	// display: block;
-		// 	position: relative;
-		// 	top: 10rem;
-		// 	left: 20rem;
-		// }
+		
+		& .navbar-item {
+			display: block;
+			align-items: flex-start;
+			font-size: 2.4rem;
+		}
+
+		& .navbar-submenu {
+			display: block;
+			position: relative;
+			top: 1rem;
+			left: 2rem;
+			background-color: transparent;
+			border: none;
+		}
 	}
 
 	&-toggle {
@@ -76,6 +83,7 @@
 		background-color:#fff;
 		border-top: 1px solid #a0a0a0;
 		cursor: pointer;
+		color: #000;
 		position: relative;
 		
 
@@ -89,6 +97,7 @@
 			@include respond(tab-land) { //width < 1200px?
 				// background-color: $secondary-color;
 				background-color: transparent;
+				color: $line-color;
 			}
 
 		}
@@ -110,15 +119,17 @@
 			z-index: 200;
 			
 			@include respond(tab-land) { //width < 1200px?
-				display: flex;
-				flex-direction: column;
+				display: block;
+				// flex-direction: column;
 				position: relative;
-				top: 0rem;
-				left: 0;
-				margin: 2rem 0 0 0;
+				top: 1rem;
+				left: 2rem;
+				// margin: 2rem 0 0 0;
+				margin: 0;
 				border: none;
 				background: transparent;
 				// padding: .5rem;
+				text-align: left;
 
 			}
 
@@ -131,11 +142,13 @@
 			margin: 0 auto;
 			padding: 1rem 0;
 			font-weight: 500;
-			font-size: 1.4rem;
+			font-size: 1.9rem;
 			transition: all 0.2s ease;
 			background-color: transparent;
 			border-top: 1px solid #a0a0a0;
-			align-items: center;
+			text-align: left;
+			color: $line-color;
+
 
 			&:first-child {
 				border-top: none;
@@ -157,10 +170,7 @@
 		margin-left: 2rem;
 
 		@include respond(tab-land) { //width < 1200px?
-			position: relative;
-			right: -2rem;
-			top: 50%;
-			transform: translateY(-30%);
+			display: none;
 
 		}
 	}
@@ -178,7 +188,7 @@
 			font-weight: 500;
 			transition: all 0.2s ease;
 			background-color:#000;
-			text-align: center;
+			align-items: flex-start;
 			font-size: 2rem;
 			background-color: transparent;
 		}
@@ -207,6 +217,7 @@
 			@include respond(tab-land) { //width < 1200px?
 				display: flex;
 				flex-direction: column;
+				align-items: flex-start;
 				position: relative;
 				top: -1rem;
 				left: 2rem;
