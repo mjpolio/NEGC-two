@@ -76,8 +76,8 @@ const Home = () => {
 					<div className="home-moreinfo-events">
 						<h3 className="home-moreinfo-events-title">Upcoming Events</h3>
 						<div className="home-moreinfo-events-info">
-							<EventItem src={img01} date={calendar[0].date} name={calendar[0].speakerEvent} topic={calendar[0].topic}/>
-							<EventItem src={img02} date={calendar[1].date} name={calendar[1].speakerEvent} topic={calendar[1].topic}/>
+							<EventItem src={img01} date={calendar[5].date} name={calendar[5].speakerEvent} topic={calendar[5].topic}/>
+							<EventItem src={img02} date={calendar[7].date} name={calendar[7].speakerEvent} topic={calendar[7].topic}/>
 						</div>
 						<button className="events-button">
 							<Link to="/calendar">See All Events</Link>
