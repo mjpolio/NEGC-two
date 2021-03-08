@@ -1,0 +1,67 @@
+* {
+	margin: 0;
+	padding: 0;
+	// box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%; //1rem = 10px ==> 10px/16px = 62.5%
+
+	@include respond(tab-land) { //width < 1200px?
+		font-size: 56.25%; //1rem = 9px, 9/16 = 56.25
+	}
+	@include respond(tab-port) { //width < 900px?
+		font-size: 50%; //1rem = 8px, 8/16 = 50
+	}
+	@include respond(phone) { 
+		font-size: 40%; //1rem = 6.4px, 6.4/16 = 40
+	}
+	@include respond(big-screen) { //width < 1200px?
+		font-size: 75%; //1rem = 12px, 12/16 = 75
+	}
+}
+
+body {
+	background-color: $secondary-color;
+
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+.container {
+	width: 75%;
+	margin: 1rem auto;
+	text-align: center;
+
+	@include respond(tab-land) { //width < 900px?
+		width: 100%;
+		margin: auto;
+	}
+}
+
+// OG STYLES
+// .flex-container {
+// 	display: flex;
+// }
+
+//OG STYLES ARE COMMENTED OUT
+.body-section {
+	// flex: 5;
+	background-color: $plain-color;
+	padding: 3rem 1rem;
+	border-top: 1px solid $primary-color;
+	border-bottom: 1px solid $primary-color;
+}
+
+.grid-2	{
+	display: flex;
+	width: 50%;
+	background-color: red;
+}
+

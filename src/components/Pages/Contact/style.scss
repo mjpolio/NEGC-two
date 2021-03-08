@@ -1,0 +1,15 @@
+.contact {
+	.link {
+		padding: .8rem 0;
+		font-size: 1.5rem;
+	}
+
+	.mail {
+		margin-top: 4rem;
+
+		&-text {
+			font-size: 1.8rem;
+			font-weight: 500;
+		}
+	}
+}

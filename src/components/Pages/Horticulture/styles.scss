@@ -1,0 +1,36 @@
+@import '../../../style/abstracts/variables';
+
+.horticulture {
+	&-img {
+		background-image: url(../../../img/hort_flower2a.png);
+		background-size: cover;
+		width: 30rem;
+		height: 30rem;
+	}
+
+	&-icon {
+		padding: 0 1rem;
+	}
+
+	&-notes {
+		margin-top: 4rem;
+	}
+
+	&-item {
+		list-style: none;
+		padding: 0.8rem;
+
+		.btn-text {
+			&:link,
+			&:visited {
+				font-size: 2rem;
+				padding: 0.7rem 1rem;
+			}
+
+			&:hover,
+			&:active {
+				border-radius: 5rem;
+			}
+		}
+	}
+}

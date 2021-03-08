@@ -1,0 +1,31 @@
+@import '../../../style/abstracts/variables';
+
+.footer {
+	&-container {
+		background-color: $tertiary-color;
+		padding: 4rem 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+	}
+
+	&-social {
+		bottom: 1rem;
+		right: 2.5rem;
+		position: absolute;
+
+		&-icon {
+			font-size: 3rem;
+			color: #4267b2;
+			margin-bottom: -0.8rem;
+			transition: all 0.4s ease-out;
+
+			&:hover {
+				color: lighten(#4267b2, 15%);
+				transform: scale(1.2);
+			}
+		}
+	}
+}

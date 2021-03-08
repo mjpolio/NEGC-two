@@ -1,0 +1,45 @@
+.news-item {
+    margin: 0 auto;
+    width: 70%;
+    color: #000;
+
+    &-image {
+        // width: 50%;
+        margin: 0 auto;
+
+        &-img {
+            width: 70%;
+            margin-bottom: 1.3rem;
+        }
+    }
+
+    &-description {
+        // width: 50%;
+
+        &-info {
+            font-size: 1.9rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+    }
+
+    &-button{
+        color: #fff;
+        background-color: #000;
+        border: none;
+        outline: none;
+        padding: 1rem 2rem;
+        cursor: pointer;
+        text-transform: uppercase;
+        border-radius: .5rem;
+	    transition: all .2s ease-in-out;
+
+        &:hover {
+            background-color: lighten(#000, 15%);
+        }
+
+        a {
+            color: #fff;
+        }
+    }
+}

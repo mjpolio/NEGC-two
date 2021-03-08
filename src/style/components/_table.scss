@@ -1,0 +1,28 @@
+table {
+	width: 95%;
+	font-size: 1.45rem;
+	margin: 4rem auto;
+	border-collapse: collapse;
+	border: 2px solid $primary-color;
+
+	thead {
+		background-color: $primary-color;
+		color: $white-color;
+	}
+
+	tbody th {
+		color: $dark-color;
+	}
+
+	th,
+	td {
+		padding: 0.5rem 1rem;
+		border: 1.5px solid $primary-color;
+	}
+
+	
+}
+
+.table-sortable {
+
+}

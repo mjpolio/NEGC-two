@@ -1,0 +1,55 @@
+@import '../../../style/abstracts/variables';
+
+.courses {
+	margin: 6rem 0 3rem 0;
+
+	&-item {
+		display: flex;
+		width: 100%;
+		align-items: center;
+
+		&:not(:last-child) {
+			margin-bottom: 1.5rem;
+		}
+	}
+
+	&-name {
+		width: 60%;
+		h4 {
+			margin-bottom: 0;
+			font-weight: normal;
+		}
+		h5 {
+			font-size: 1.5rem;
+			margin-top: 0.5rem;
+			font-weight: normal;
+		}
+	}
+
+	&-info {
+		width: 40%;
+	}
+
+	.line {
+		width: 80%;
+		margin: 0 auto;
+		height: 1.3px;
+		background-color: darken($tertiary-color, 25%);
+		margin-bottom: 1.5rem;
+	}
+
+	a {
+		&:link,
+		&:visited {
+			color: $dark-color;
+			display: inline-block;
+			font-weight: 500;
+			transition: all 0.2s ease-out;
+		}
+
+		&:hover {
+			transform: translateY(-0.08rem) scale(1.04);
+			color: $primary-color;
+		}
+	}
+}

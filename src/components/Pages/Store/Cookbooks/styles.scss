@@ -1,0 +1,18 @@
+@import '../../../../style/abstracts/variables';
+
+.cookbook-item {
+	&-img {
+		background-image: url(../../../../img/Cookbook3sm.jpg);
+		background-size: 100%;
+		background-position: center;
+		width: 38rem;
+		height: 50rem;
+		margin: 4rem auto;
+		box-shadow: 1rem 2rem 2rem rgba(0, 0, 0, 0.3);
+		border-radius: 3px;
+	}
+
+	&-description {
+		margin: 4rem 0 2rem;
+	}
+}

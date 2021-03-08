@@ -1,0 +1,225 @@
+@import '../../../style/abstracts/mixins';
+@import '../../../style/abstracts/variables';
+
+.navbar {
+	background-color: #fff;
+	text-align: center;
+	max-width: 100%;
+	margin: 0 auto;
+
+	& ul {
+		display: inline-flex;
+		list-style: none;
+		color: #fff;
+		width: 75%;
+
+		@include respond(tab-land) { //width < 1200px?
+			display: none;
+		}	
+	}
+
+	& .mobile {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		height: 100vh;
+		position: fixed;
+		top: 0;
+		left: 0;
+		opacity: 1;
+		transition: all 0.2s ease;
+		background-color: rgba(0,0,0,.9);
+		z-index: 99;
+		cursor: pointer;
+		
+		// & .navbar-item {
+		// 	display: flex;
+		// 	flex-direction: column;
+		// }
+		// & .navbar-submenu {
+		// 	// display: block;
+		// 	position: relative;
+		// 	top: 10rem;
+		// 	left: 20rem;
+		// }
+	}
+
+	&-toggle {
+		color: $line-color;
+		padding: 0 1rem; 
+		border: 1px solid $line-color;
+		border-radius: 1rem;
+		// float: right;
+		margin: auto;
+		cursor: pointer;
+		font-size: 2.6rem;
+		z-index: 100;
+		position: absolute;
+		top: 1rem;
+		right: 1rem;
+		display: none;
+
+		@include respond(tab-land) { //width < 1200px?
+			display: block;
+		}
+	}
+
+	&-item {
+		display: block;
+		width: 16rem;
+		padding: 1.5rem .8rem;
+		font-weight: 400;
+		font-size: 1.4rem;
+		transition: all 0.2s ease;
+		background-color:#fff;
+		border-top: 1px solid #a0a0a0;
+		cursor: pointer;
+		position: relative;
+		
+
+		&:active,
+		&:focus,
+		&:hover {
+			background-color: $secondary-color;
+			border-radius: .2rem;
+			display: block;
+
+			@include respond(tab-land) { //width < 1200px?
+				// background-color: $secondary-color;
+				background-color: transparent;
+			}
+
+		}
+
+		&:hover .navbar-icon {
+			transform: rotate(90deg);
+			transition: all 0.2s ease;
+
+		}
+
+		// &:active .navbar-submenu,
+		// &:focus .navbar-submenu,
+		&:hover .navbar-submenu {
+			display: block;
+			position: absolute;
+			background: #fff;
+			margin-top: 14px;
+			margin-left: -8px;
+			z-index: 200;
+			
+			@include respond(tab-land) { //width < 1200px?
+				display: flex;
+				flex-direction: column;
+				position: relative;
+				top: 0rem;
+				left: 0;
+				margin: 2rem 0 0 0;
+				border: none;
+				background: transparent;
+				// padding: .5rem;
+
+			}
+
+		}
+
+		@include respond(tab-land) { //width < 1200px?
+			display: flex;
+			flex-direction: column;
+			width: 20rem;
+			margin: 0 auto;
+			padding: 1rem 0;
+			font-weight: 500;
+			font-size: 1.4rem;
+			transition: all 0.2s ease;
+			background-color: transparent;
+			border-top: 1px solid #a0a0a0;
+			align-items: center;
+
+			&:first-child {
+				border-top: none;
+			}
+
+			// & .navbar-submenu {
+			// 	position: relative;
+			// 	top: 1rem;
+			// 	left: 4rem;
+			// }
+			// &:hover .navbar-icon {
+			// 	transform: rotate(90deg);
+			// 	transition: all 0.2s ease;
+			// }
+		}
+	}
+
+	&-icon {
+		margin-left: 2rem;
+
+		@include respond(tab-land) { //width < 1200px?
+			position: relative;
+			right: -2rem;
+			top: 50%;
+			transform: translateY(-30%);
+
+		}
+	}
+
+	&-links {
+		color: #000;
+		text-decoration: none;	
+		
+		@include respond(tab-land) { //width < 1200px?
+			color: $line-color;
+			text-decoration: none;	
+			display: flex;
+			width: 20rem;
+			// padding: 2rem;
+			font-weight: 500;
+			transition: all 0.2s ease;
+			background-color:#000;
+			text-align: center;
+			font-size: 2rem;
+			background-color: transparent;
+		}
+	}
+
+	&-submenu {
+		display: none;
+		background-color:#fff;
+		border: 1px solid $line-color;
+
+		& .navbar-item {
+			border-bottom: 1px solid $line-color;
+
+			&:last-child {
+				border-bottom: none;
+			}
+
+			& > .navbar-links {
+				font-size: 1.4rem;
+				margin: 0;
+				padding: 0;
+				background-color: transparent;
+
+			}
+
+			@include respond(tab-land) { //width < 1200px?
+				display: flex;
+				flex-direction: column;
+				position: relative;
+				top: -1rem;
+				left: 2rem;
+				padding: .5rem 0;
+				border: none;
+				// background-color: red;
+				font-size: 1.6rem;
+			}
+
+			
+		
+		}
+
+		
+	}	
+}

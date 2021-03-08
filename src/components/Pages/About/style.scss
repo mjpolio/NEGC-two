@@ -1,0 +1,58 @@
+.about {
+	&-section {
+		display: flex;
+	}
+
+	&-left {
+		flex: 1;
+	}
+
+	&-text {
+		flex: 6;
+		padding: 0 3rem;
+
+		.link:hover {
+			transform: translate(0.5rem) scale(1.05);
+		}
+	}
+
+	&-right {
+		flex: 1;
+		align-self: center;
+		margin-right: 3rem;
+	}
+
+	&-list-container {
+		width: 100%;
+		display: flex;
+	}
+
+	&-list {
+		text-align: left;
+		margin: 2px auto 8px;
+	}
+
+	&-image {
+		background-repeat: no-repeat;
+		background-size: contain;
+		width: 10rem;
+		height: 10rem;
+		margin: 1rem;
+
+		&.img3 {
+			background-image: url(../../../img/nat-gar-club-logo.png);
+		}
+
+		&.img1 {
+			background-image: url(../../../img/gar-club-fed-ma-logo.png);
+		}
+
+		&.img2 {
+			background-image: url(../../../img/ne-region-logo.png);
+		}
+
+		&.img-right {
+			background-image: url(../../../img/about-flower.jpg);
+		}
+	}
+}
