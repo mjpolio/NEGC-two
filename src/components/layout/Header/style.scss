@@ -10,10 +10,10 @@
 	min-width: 100%;
 	background-color: $white-color;
 
-// 	@include respond(tab-land) { //width < 1200px?
-// 		background: url(../../../img/logo_main.jpg) contain no-repeat;
-// 		width: 100vw;
-// 		height: 25rem;
-// 		// width: 100%;
-// 	}
+	@include respond(phone) { //width < 1200px?
+		// background: url(../../../img/logo_main.jpg) contain no-repeat;
+		width: 100vw;
+		height: 15rem;
+		// width: 100%;
+	}
 }

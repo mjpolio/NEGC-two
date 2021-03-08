@@ -71,6 +71,11 @@
 		&-icon {
 			font-size: 4rem;
 			color: $primary-color;
+
+			@include respond(phone) { //width < 1200px?
+				font-size: 2rem;
+
+			}
 		}
 
 		&-outer {
@@ -85,6 +90,11 @@
 				$secondary-color,
 				$tertiary-color
 			);
+
+			@include respond(phone) { //width < 1200px?
+				height: calc(18rem);
+				width: calc(32rem);
+			}
 		}
 
 		&-inner {
@@ -92,6 +102,11 @@
 			width: calc(53.5rem);
 			background-color: $plain-color;
 			margin: auto;
+
+			@include respond(phone) { //width < 1200px?
+				height: calc(16rem);
+				width: calc(28rem);
+			}
 		}
 
 		&-text {

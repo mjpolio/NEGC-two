@@ -1,7 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
-	// box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html {
@@ -42,6 +42,7 @@ li {
 	@include respond(tab-land) { //width < 900px?
 		width: 100%;
 		margin: auto;
+		
 	}
 }
 

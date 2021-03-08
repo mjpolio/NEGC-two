@@ -1,3 +1,4 @@
+@import '../../../style/abstracts/mixins';
 @import '../../../style/abstracts/variables';
 
 .footer {
@@ -9,6 +10,11 @@
 		justify-content: center;
 		align-items: center;
 		position: relative;
+
+		@include respond(phone) { //width < 1200px?
+			padding: 1rem 0;
+			font-size: 1.2rem;
+		}
 	}
 
 	&-social {
@@ -16,11 +22,19 @@
 		right: 2.5rem;
 		position: absolute;
 
+		@include respond(phone) { //width < 1200px?
+			position: relative;
+		}
+
 		&-icon {
 			font-size: 3rem;
 			color: #4267b2;
 			margin-bottom: -0.8rem;
 			transition: all 0.4s ease-out;
+
+			@include respond(phone) { //width < 1200px?
+				font-size: 1.2rem;
+			}
 
 			&:hover {
 				color: lighten(#4267b2, 15%);
