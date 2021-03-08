@@ -13,6 +13,10 @@ body {
 		font-size: 3rem;
 		line-height: 4rem;
 		margin-bottom: 1.6rem;
+
+		@include respond(phone) { //width < 1200px?
+			margin-top: 3rem;
+		}
 	}
 
 	&-secondary {
