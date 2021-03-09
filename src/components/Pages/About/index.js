@@ -16,7 +16,7 @@ const About = () => {
 					About Us
 					<div className='underline'></div>
 				</h2>
-				<p className='text-left'>
+				<p className='text-left about-text'>
 					The Norwood Evening Garden Club is a member of:
 				</p>
 				<div className="about-list-container">
@@ -35,18 +35,18 @@ const About = () => {
 						</li>
 					</ul>
 				</div>
-				<p>
+				<p className='about-text'>
 					Members of the Norwood Evening Garden Club have been providing
 					education and public beautification in Norwood and its surrounding
 					communities since 1996. The Club is open to novice and expert
 					gardeners, and draws its members from Norwood, Walpole, Westwood,
 					Dedham, Medfield, Randolph and Stoughton.
 				</p>
-				<p>
+				<p className='about-text'>
 					For information about the club, contact{' '}
 					<a
 						href='mailto:meheike59@gmail.com?subject=Gardening Club Membership'
-						className='link'
+						className='about-link'
 					>
 						Mary Ellen Heike
 					</a>

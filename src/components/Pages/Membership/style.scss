@@ -1,4 +1,5 @@
 @import '../../../style/abstracts/mixins';
+@import '../../../style/abstracts/variables';
 
 
 .membership {
@@ -21,7 +22,42 @@
 		}
 	}
 
-	.link:hover {
-		transform: translate(0.4rem, -0.15rem) scale(1.05);
+	&-text {
+		@include respond(phone) { //width < 1200px?
+			font-size: 2.6rem;
+
+		}
 	}
+
+	&-link {
+		&,
+		&:link,
+		&:visited {
+			font-weight: 500;
+			font-size: 1.7rem;
+			color: $dark-color;
+			display: inline-block;
+			transition: all 0.3s ease-out;
+
+			@include respond(phone) { //width < 1200px?
+				font-size: 2.6rem;
+	
+			}
+		}
+
+		&:hover {
+			color: $primary-color;
+			transform: translate(0.4rem, -0.15rem) scale(1.05);
+		}
+
+		&:active,
+		&:focus {
+			outline: none;
+		}
+		
+		
+	}
+
+	// .link:hover {
+	// }
 }

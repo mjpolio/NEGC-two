@@ -10,22 +10,22 @@ const Membership = (props) => {
 				Membership
 				<div className='underline'></div>
 			</h2>
-			<p>
+			<p className='membership-text'>
 				To receive information about becoming a member of the Norwood Evening
-				Garden Club please contact{' '}
+				Garden Club please contact the{' '}
 				<a
-					className='link'
+					className='membership-link'
 					href='mailto:meheike59@gmail.com?subject=Gardening Club'
 				>
-					Membership Chair
+					Membership Chair.
 				</a>
 			</p>
-			<p>
+			<p className='membership-text'>
 				Meetings are held in the Carriage House at the First Baptist Church, 71
 				Bond Street in Norwood on the last Tuesday of each month, beginning at
 				6:45pm.
 			</p>
-			<p>
+			<p className='membership-text'>
 				Besides attending meetings, each member is required to serve actively on
 				one project committee and one civic beautification committee, provide
 				refreshments for one meeting and participate in our annual spring plant
