@@ -15,7 +15,7 @@ const Calendar = () => {
 				Monthly Program Calendar
 				<div className='underline'></div>
 			</h2>
-			<p className='my-2'>
+			<p className='my-2 calendar-text'>
 				Guests are welcome at all meetings except those noted as ' Members Only
 				' meetings. Guests may register at the door. The guest donation is $5.00
 				per meeting.
