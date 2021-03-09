@@ -52,7 +52,7 @@ const Calendar = () => {
 				</tbody>
 			</table>
 			<h3 className='heading heading-secondary'>Norwood Evening Garden Club</h3>
-			<p>
+			<p className="calendar-text">
 				The Norwood Evening Garden Club has been providing education and public
 				beautification in Norwood and Walpole Since 2096. Open to novice and
 				expert gardeners, the Club is a member of The Garden Club Federation of
@@ -60,7 +60,7 @@ const Calendar = () => {
 				and draws its members from the communities of Norwood, Walpole,
 				Westwood, Dedham, Medfield, Stoughton and Randolph.
 			</p>
-			<p>
+			<p className="calendar-text">
 				For information about joining the Norwood Evening Garden Club, contact{' '}
 				<a
 					href='mailto:donnamlane@verizon.net?subject=Gardening Club Information'
