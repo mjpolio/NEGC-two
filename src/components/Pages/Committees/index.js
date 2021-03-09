@@ -31,16 +31,16 @@ const Committees = () => {
 			<div className='committees-info'>
 				{committees.map((item, i) => (
 					<React.Fragment key={i} id={item.name}>
-						<h3 className='heading heading-secondary heading-underline text-secondary'>
+						<h3 className='heading heading-secondary heading-underline text-secondary committees-title'>
 							{item.name}
 						</h3>
-						<p>{item.description}</p>
+						<p className='committees-text'>{item.description}</p>
 						{item.list && (
 							<>
-								<p className='m-1'>{item.list.title}</p>
-								<ul className='list'>
+								<p className='m-1 committees-list'>{item.list.title}</p>
+								<ul>
 									{item.list.points.map((point, i2) => (
-										<li key={i2}>
+										<li key={i2} className='committees-list-items'>
 											<GiSpotedFlower className='list-icon' />
 											{point}
 										</li>
