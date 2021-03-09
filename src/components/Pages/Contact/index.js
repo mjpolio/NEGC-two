@@ -1,6 +1,7 @@
 import React from 'react';
 import './style.scss';
 
+
 const Contact = () => {
 	return (
 		<div className='contact'>
@@ -14,12 +15,12 @@ const Contact = () => {
 				Baptist Church, 71 Bond Street in Norwood
 			</h3>
 			<div>
-				<h3 className='heading heading-secondary heading-underline'>
+				<h3 className='heading heading-secondary heading-underline contact-heading'>
 					Email us at:
 				</h3>
 				<a
 					href='mailto:meheike59@gmail.com?subject=Gardening Club Membership'
-					className='link'
+					className='link contact-link'
 				>
 					Membership - Mary Ellen Heike (membership)
 				</a>
@@ -39,7 +40,7 @@ const Contact = () => {
 				</a>
 			</div>
 			<div className="mail">
-				<h3 className='heading heading-secondary heading-underline'>
+				<h3 className='heading heading-secondary heading-underline contact-heading'>
 					By Mail:
 				</h3>
 				<p className='text-dark mail-text'>

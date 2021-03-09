@@ -1,3 +1,4 @@
+@import '../../../style/abstracts/mixins';
 @import '../../../style/abstracts/variables';
 
 .horticulture {
@@ -10,6 +11,10 @@
 
 	&-icon {
 		padding: 0 1rem;
+
+		@include respond(phone) { 
+			display: none;
+		}
 	}
 
 	&-notes {
@@ -25,6 +30,10 @@
 			&:visited {
 				font-size: 2rem;
 				padding: 0.7rem 1rem;
+
+				@include respond(phone) { 
+					font-size: 2.6rem; //1rem = 6.4px, 6.4/16 = 40
+				}
 			}
 
 			&:hover,
